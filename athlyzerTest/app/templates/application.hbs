@@ -1,5 +1,20 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div class="container">
+  <div class="menu">
+    {{#link-to "index"}}
+      <h1>
+        <em>AthlyzerTestCenter</em>
+      </h1>
+    {{/link-to}}
+    <div class="links">
+      {{#link-to "videoroute" class="menu-videoroute"}}
+        videoroute 
+      {{/link-to}}
+      {{#link-to "facebookroute" class="menu-facebookroute"}}
+        facebookroute
+      {{/link-to}}
+    </div>
+  </div>
+  <div class="body">
+    {{outlet}}
+  </div>
+</div>
