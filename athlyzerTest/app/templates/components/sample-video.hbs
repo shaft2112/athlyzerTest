@@ -1,0 +1,13 @@
+{{videojs-player id="my-video" fluid=true src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4"
+type="video/mp4" autoplay=false controls=true }}
+<br>
+<p>
+  Buttontest:
+<br>
+{{#paper-button raised=true primary=true onClick=(action "play")}}Play{{/paper-button}}
+{{#paper-button raised=true primary=true onClick=(action "pause")}}Pause{{/paper-button}}
+{{#paper-button raised=true primary=true onClick=(action "seek")}}Jump to input{{/paper-button}}
+
+Input (in seconds) for Video jumps:
+{{input value=this.input type="number" min="0" max="13"}}<br>
+</p>
