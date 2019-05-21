@@ -3,6 +3,7 @@ import Component from '@ember/component';
 export default Component.extend({
   actions: {
     share(){
+    //open up share diaglogue with the Athlyzer Page  
     FB.ui({
   method: 'share',
   href: 'https://www.facebook.com/Athlyzer/',

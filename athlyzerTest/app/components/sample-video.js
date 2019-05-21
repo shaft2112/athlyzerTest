@@ -5,8 +5,9 @@ export default Component.extend({
 
   actions: {
     play() {
-      //Alle (einen...) Player auf der Seite in ein Objekt schreiben
+      //Write all Players in one Object
       var player = videojs.getPlayers();
+      //iterate over the object to extract the player and call the videojs method on it
       for(var id in player){
         player[id].play();
         break;
@@ -16,20 +17,16 @@ export default Component.extend({
       return true;
     },
     pause() {
-      //Alle (einen...) Player auf der Seite in ein Objekt schreiben
       var player = videojs.getPlayers();
-      //Über alle (einen...) Player iterieren um diese(n) anzuhalten
       for(var id in player){
         player[id].pause();
         break;
       }
     },
     seek: function(user){
-      //userinput lesen und speichern
+      //read userinput and place it in the right videojs method
       var uinput = this.get('input');
-      //Alle (einen...) Player auf der Seite in ein Objekt schreiben
       var player = videojs.getPlayers();
-      //Über alle (einen...) Player iterieren um in diesen(/m) zu springen
       for(var id in player){
         player[id].currentTime(uinput);
         break;
