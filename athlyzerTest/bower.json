@@ -1,0 +1,6 @@
+{
+  "name": "athlyzer-test",
+  "dependencies": {
+    "video.js": "~5.12"
+  }
+}
