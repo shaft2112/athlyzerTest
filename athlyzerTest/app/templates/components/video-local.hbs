@@ -1,0 +1,10 @@
+{{videojs-player id="my-video" fluid=true src="../../assets/samplevideo.mp4"
+type="video/mp4" autoplay=false controls=false }}
+<br>
+<br>
+{{#paper-button raised=true primary=true onClick=(action "play")}}Play{{/paper-button}}
+{{#paper-button raised=true primary=true onClick=(action "pause")}}Pause{{/paper-button}}
+{{#paper-button raised=true primary=true onClick=(action "seek")}}Jump to input{{/paper-button}}
+
+Input (in seconds) for Video jumps:
+{{input value=this.input type="number" min="0" max="13"}}

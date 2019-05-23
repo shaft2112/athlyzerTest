@@ -9,6 +9,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('videoroute');
   this.route('facebookroute');
+  this.route('videoroute-local');
 });
 
 export default Router;
